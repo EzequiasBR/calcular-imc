@@ -1,0 +1,75 @@
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+
+body {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   min-height: 100vh;
+   background-color: rgb(226, 238, 226);
+}
+
+.card {
+   width: 20rem;
+   background-color: #040a01;
+   box-shadow: 0px 0px 10px 5px rgb(18, 171, 247);
+}
+
+.card-body {
+   width: 100%;
+   text-align: start;
+}
+
+.card .d-input {
+   width: 63%;
+   margin-top: 20px;
+   font-size: 16pt;
+}
+
+.card .d-label {
+   width: 35%;
+}
+
+.card .text-info .btn {
+   width: 100%;
+}
+
+.card .text-info .card-text {
+   height: 60px;
+   padding-top: 10px;
+   border-radius: 5px;
+   font-weight: bold;
+}
+
+.balaoErro {
+   display: none;
+   position: absolute;
+   background-color: #f6f6f6;
+   font-size: 9pt;
+   color: rgb(2, 2, 2);
+   padding: 5px 2px;
+   border-radius: 5px;
+   z-index: 1;
+   margin-left: 20px;
+   margin-top: 7px;
+   border:2px red solid;
+   color: red;
+   font-weight: bold;
+}
+
+.balaoErro::after {
+   content: " ";
+   left: 145px;
+   top: -8px;
+   display: block;
+   position: absolute;
+   border-style: solid;
+   width: 15px;
+   height: 15px;
+   background-color:#f6f6f6;
+   border-color:transparent red red transparent;
+   transform: rotate(225deg);
+}
